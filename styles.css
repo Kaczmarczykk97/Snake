@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --background-color: #161616;
+  --game-board-color: rgb(241, 201, 152);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+#game-board {
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  background-color: var(--game-board-color);
+}
+
+.snake {
+  background-color: rgb(122, 189, 22);
+  border: 0.25vmin solid black;
+}
+
+.food {
+  background-color: rgb(223, 223, 22);
+  border: 0.25vmin solid black;
+}
